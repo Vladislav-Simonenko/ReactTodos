@@ -1,17 +1,17 @@
 
 import React, { useEffect, useState } from "react";
-import PostService from "./API/PostService";
-import PostFilter from "./components/PostFilter";
-import PostForm from "./components/PostForm";
-import Postlist from "./components/Postlist";
-import { useFetching } from "./hooks/useFetching";
-import { usePosts } from "./hooks/usePost";
-import "./styles/App.css"
-import MyButton from "./UI/button/MyButton";
-import Loader from "./UI/Loader/Loader";
-import MyModal from "./UI/MyModal/MyModal";
-import Pagination from "./UI/paginations/Pagination";
-import { getPageArray, getPagesCount } from "./utils/pages";
+import PostService from "../API/PostService";
+import PostFilter from "../components/PostFilter";
+import PostForm from "../components/PostForm";
+import Postlist from "../components/Postlist";
+import { useFetching } from "../hooks/useFetching";
+import { usePosts } from "../hooks/usePost";
+import "../styles/App.css"
+import MyButton from "../UI/button/MyButton";
+import Loader from "../UI/Loader/Loader";
+import MyModal from "../UI/MyModal/MyModal";
+import Pagination from "../UI/paginations/Pagination";
+import { getPageArray, getPagesCount } from "../utils/pages";
 
 
 
@@ -165,7 +165,7 @@ const changePage = (page) =>{
       {/*Управляемый компонент*/}
       {/*Передаем в компонент функцию обратного вызова, сам пропс называем create, а функция createPost и создадим ее выше.*/}
       <MyButton onClick={() => setModal(true)}>
-        Создать задачу
+        Создать пользователя
       </MyButton>
       <MyModal 
       visible={modal}
